@@ -2,17 +2,16 @@ function logger() {
     alert('ce vrea pula mea')
 }
 function addToDo() {
-    var taskInput = document.getElementById('taskInput');
-    var taskText = taskInput.value;
+    const taskInput = document.getElementById('taskInput');
+    const taskText = taskInput.value;
 
     if (taskText.trim() === '') {
         alert('Please enter a task.');
         return;
     }
 
-    var taskList = document.getElementById('taskList');
-    var taskItem = document.createElement('li');
-    taskItem.onclick = logger
+    const taskList = document.getElementById('taskList');
+    const taskItem = document.createElement('li');
     taskItem.appendChild(document.createTextNode(taskText));
     taskList.appendChild(taskItem);
 
