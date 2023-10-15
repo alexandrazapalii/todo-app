@@ -1,3 +1,6 @@
+function logger() {
+    alert('ce vrea pula mea')
+}
 function addToDo() {
     const taskInput = document.getElementById('taskInput');
     const taskText = taskInput.value;
